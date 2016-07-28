@@ -1,0 +1,10 @@
+name = IIT WYSIWYG Filter Custom Blacklist
+description = Provides IIT custom WYSIWYG filter blacklist
+
+core = 7.x
+package = Illinois Institute of Technology
+
+version = 7.x-1.0
+
+dependencies[] = wysiwyg_filter
+files[] = iit_wysiwyg_filter_blacklist.module

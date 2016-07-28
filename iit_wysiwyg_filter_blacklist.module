@@ -1,0 +1,12 @@
+<?php
+
+/**
+* @file
+* Provides IIT custom WYSIWYG filter blacklist
+*/
+
+
+/* ***************************************** */
+/* Hook Implementations                      */
+/* ***************************************** */
+
