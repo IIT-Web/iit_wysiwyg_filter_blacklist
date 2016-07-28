@@ -10,3 +10,16 @@
 /* Hook Implementations                      */
 /* ***************************************** */
 
+/**
+ * Alters HTML elements blacklist.
+ * Blacklist function is found in wysiwyg_filter.inc in wysiwyg_filter module.
+ */
+function iit_wysiwyg_filter_blacklist_wysiwyg_filter_elements_blacklist_alter(&$blacklist) { 
+	$new_blacklist = array();
+	foreach ($blacklist as $value) {
+		if ($value !== 'iframe') {
+			$new_blacklist[] = $value;
+		}
+	}
+	$blacklist = $new_blacklist;
+}
