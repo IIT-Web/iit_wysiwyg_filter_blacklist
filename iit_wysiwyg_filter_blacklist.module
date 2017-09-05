@@ -17,7 +17,9 @@
 function iit_wysiwyg_filter_blacklist_wysiwyg_filter_elements_blacklist_alter(&$blacklist) { 
 	$new_blacklist = array();
 	foreach ($blacklist as $value) {
-		if ($value !== 'iframe') {
+		if ($value === 'iframe' || $value === 'button') {
+			// Do Nothing
+		} else {
 			$new_blacklist[] = $value;
 		}
 	}
